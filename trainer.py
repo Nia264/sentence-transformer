@@ -41,8 +41,6 @@ class MultitaskDataset(Dataset):
         
     def __len__(self) -> int:
         return len(self.texts)
-    
-    
         
     def __getitem__(self, idx: int) -> Dict[str, torch.Tensor]:
         # Simulated tokenization for demonstration
